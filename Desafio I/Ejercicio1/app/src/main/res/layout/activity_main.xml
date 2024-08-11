@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints"
+    android:background="@color/celeste"
+    >
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="15dp"
+            android:text="Calcular promedio estudiantil"
+            android:textColor="@color/azuldark"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="45dp"
+            android:layout_gravity="center"
+            />
+
+
+        <EditText
+            android:id="@+id/txtnombre"
+            android:layout_width="309dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Nombre del estudiante"
+            android:ems="5"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <EditText
+            android:id="@+id/Nota1"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nota 1"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="207dp" />
+
+        <EditText
+            android:id="@+id/Nota2"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nota 2"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="399dp" />
+
+        <EditText
+            android:id="@+id/Nota3"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nota 3"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="207dp" />
+
+        <EditText
+            android:id="@+id/Nota4"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nota 4"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <EditText
+            android:id="@+id/Nota5"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nota 5"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="110dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/azul"
+            android:text="Calcular"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="401dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/azuldark"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="509dp" />
+
+        <TextView
+            android:id="@+id/txtapr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/morado"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="509dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

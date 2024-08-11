@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/aja"
+        android:layout_centerHorizontal="true"
+        android:text="Sustos que no dan gustos"
+
+         />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="20dp"
+        android:layout_marginTop="80dp"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/sal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salario"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/nombre"
+        android:padding="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/calcu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/sal"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/resul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcu"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/aja2"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cuadro"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:id="@+id/aja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resul"
+        android:layout_marginTop="70dp"
+        android:textSize="50sp"
+        android:textColor="@color/aja"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/aja2"
+        android:layout_marginTop="400dp"/>
+
+</RelativeLayout>
